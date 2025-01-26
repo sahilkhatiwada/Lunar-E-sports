@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient-animation {
+  background: linear-gradient(
+    270deg,
+    rgba(72, 61, 139, 0.9),
+    rgba(75, 0, 130, 0.9),
+    rgba(0, 0, 139, 0.9),
+    rgba(0, 191, 255, 0.9)
+  );
+  background-size: 400% 400%;
+  animation: bgMove 8s ease infinite;
+}
+
+.custom-cursor {
+  z-index: 1000;
+}
+
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* Gradient Animation */
+.bg-gradient-animation {
+  background: linear-gradient(
+    -45deg,
+    #1e3a8a,
+    #9333ea,
+    #e11d48,
+    
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Mouse Scroll Animation */
+@keyframes mouse-scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animate-marquee {
+  display: flex;
+  animation: marquee 5s linear infinite;
+  will-change: transform;
+}
+.animate-fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.before\\:absolute:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
