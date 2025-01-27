@@ -49,15 +49,14 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 md:px-12">
-        <h1 className="text-4xl md:text-7xl font-extrabold mb-6 animate-fade-in text-cyan-400 uppercase">
-          Welcome to <span className="text-cyan-500">Lunar E-sport</span>
+        <h1 className="text-4xl md:text-5xl font-audio mb-6 animate-fade-in text-cyan-400 uppercase">
+          Welcome to <span className="text-cyan-500 text-5xl font-audio">Lunar E-sport</span>
         </h1>
-        <p className="text-lg md:text-2xl mb-10 animate-slide-up">
-          Unleash your skills, conquer the arena, and connect with champions —
-          your ultimate e-sports journey starts here.
+        <p className="text-lg md:text-2xl font-mono mb-10 animate-slide-up">
+        Step into the Spotlight, Compete with the Best, and Become a Champion
         </p>
         <div className="mb-8">
-          <button className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-lg font-bold rounded-full shadow-xl transform transition-transform hover:scale-110 hover:shadow-cyan-500/50">
+          <button className="px-8 py-4 font-audio bg-gradient-to-r from-cyan-500 to-blue-500 text-lg font-bold rounded-full shadow-xl transform transition-transform hover:scale-110 hover:shadow-cyan-500/50">
             Explore Tournaments
           </button>
         </div>
@@ -82,7 +81,7 @@ const HeroSection = () => {
                 </span>
               </>
             ) : (
-              <span className="text-red-500 font-bold text-xl">
+              <span className="text-red-500 font-bold text-xl font-mono">
                 Registration Closed
               </span>
             )}

@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        press:['"Press Start 2P"', 'cursive'],
+        audio : ['"Audiowide"', 'cursive'],
+      },
       animation: {
         'fade-in': 'fadeIn 2s ease-in-out',
         'slide-up': 'slideUp 2s ease-in-out',

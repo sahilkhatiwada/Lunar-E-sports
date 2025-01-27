@@ -53,10 +53,10 @@ const RegisterForm = () => {
       className="bg-white shadow-lg rounded-lg p-6 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl flex flex-col animate-fadeIn"
       onSubmit={handleSubmit}
     >
-      <h2 className="text-2xl font-bold mb-6 text-gray-700 text-center">Register</h2>
+      <h2 className="text-2xl font-bold mb-6 font-audio text-gray-700 text-center">Register</h2>
 
       <div className="mb-4">
-        <label className="block text-gray-600 mb-2" htmlFor="name">Player Full Name</label>
+        <label className="block text-gray-600 mb-2 font-audio" htmlFor="name">Player Full Name</label>
         <input
           type="text"
           id="name"
@@ -69,7 +69,7 @@ const RegisterForm = () => {
       </div>
 
       <div className="mb-4">
-        <label className="block text-gray-600 mb-2" htmlFor="teamName">Team Name</label>
+        <label className="block text-gray-600 mb-2 font-audio" htmlFor="teamName">Team Name</label>
         <input
           type="text"
           id="teamName"
@@ -82,7 +82,7 @@ const RegisterForm = () => {
       </div>
 
       <div className="mb-4">
-        <label className="block text-gray-600 mb-2" htmlFor="address">Address</label>
+        <label className="block text-gray-600 mb-2 font-audio" htmlFor="address">Address</label>
         <input
           type="text"
           id="address"
@@ -95,13 +95,13 @@ const RegisterForm = () => {
       </div>
 
       <div className="mb-4">
-        <label className="block text-gray-600 mb-2" htmlFor="game">Games</label>
+        <label className="block text-gray-600 mb-2 font-audio" htmlFor="game">Games</label>
         <select
           id="game"
           name="game"
           value={formData.game}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full px-4 py-3 border border-gray-300 font-audio rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           
         >
           <option value="">Select a Game</option>
@@ -112,21 +112,21 @@ const RegisterForm = () => {
       </div>
 
       <div className="mb-4">
-        <label className="block text-gray-600 mb-2" htmlFor="email">Email</label>
+        <label className="block text-gray-600 mb-2 font-audio" htmlFor="email">Email</label>
         <input
           type="email"
           id="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full px-4 py-3 border  border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           
         />
       </div>
 
       <button
         type="submit"
-        className="w-full bg-blue-500 text-white py-3 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
+        className="w-full bg-blue-500 font-audio text-white py-3 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
         onSubmit={handleSubmit}
       >
         Submit

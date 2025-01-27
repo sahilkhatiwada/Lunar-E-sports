@@ -18,17 +18,17 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-[#141c30] shadow fixed top-0 left-0 w-full z-50 transition duration-300">
+      <nav className="top-0 left-0 w-full z-50 bg-[#1f1f1f] fixed transition duration-300">
         <div className="container mx-auto flex items-center justify-between py-4 px-6">
           {/* Logo */}
           <div
-            className="text-2xl font-bold text-[#fdfdfd] cursor-pointer uppercase"
+            className="text-2xl font-bold font-audio text-[#fdfdfd] cursor-pointer uppercase"
           >
             Lunar E-sport
           </div>
 
           {/* Menu for larger screens */}
-          <div className="hidden md:flex items-center space-x-6 uppercase">
+          <div className="hidden md:flex items-center space-x-6 uppercase font-audio">
             <a
               href="#home"
               className="text-[#fff]  hover:text-indigo-500 transition duration-300"

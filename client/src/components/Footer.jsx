@@ -8,16 +8,16 @@ const Footer = () => {
         {/* Logo and Description */}
         <div className="flex flex-col items-center md:items-start">
           <img src="/path-to-logo.png" alt="Lunar E-sport Logo" className="w-16 mb-4" />
-          <h2 className="text-lg font-bold text-white">Lunar E-sport</h2>
-          <p className="text-sm text-gray-400">
+          <h2 className="text-lg font-bold text-white font-audio">Lunar E-sport</h2>
+          <p className="text-sm text-gray-400  justify-center font-mono mt-2">
             Bringing the ultimate e-sports experience to gamers worldwide. Join us and level up your gaming journey!
           </p>
         </div>
   
         {/* Quick Links */}
         <div className="text-center md:text-left">
-          <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-          <ul className="space-y-2">
+          <h3 className="text-lg font-semibold text-white mb-4 font-audio">Quick Links</h3>
+          <ul className="space-y-2 font-mono">
             <li>
               <a href="#home" className="hover:text-cyan-400 transition-colors">
                 Home
@@ -43,8 +43,8 @@ const Footer = () => {
   
         {/* Event Links */}
         <div className="text-center md:text-left">
-          <h3 className="text-lg font-semibold text-white mb-4">Event Links</h3>
-          <ul className="space-y-2">
+          <h3 className="text-lg font-semibold text-white mb-4 font-audio">Event Links</h3>
+          <ul className="space-y-2 font-mono">
             <li>
               <a href="#upcoming-events" className="hover:text-cyan-400 transition-colors">
                 Upcoming Events
@@ -75,13 +75,13 @@ const Footer = () => {
           <input
             type="email"
             placeholder="Enter your email"
-            className="px-4 py-2 w-full md:w-80 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            className="px-4 py-2 w-full md:w-80 font-mono rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"
           />
-          <button className="px-6 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg font-bold hover:scale-105 transition-transform">
+          <button className="px-6 py-2 bg-gradient-to-r font-audio from-cyan-500 to-blue-500 text-white rounded-lg font-bold hover:scale-105 transition-transform">
             Subscribe
           </button>
         </div>
-        <p className="text-sm text-gray-500 mt-4 md:mt-0">
+        <p className="text-sm font-audio text-gray-500 mt-4 md:mt-0">
           © 2025 Lunar E-sport. In association with Lunar IT Solutions.
         </p>
       </div>

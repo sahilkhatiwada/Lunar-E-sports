@@ -1,7 +1,7 @@
 const organizers = [
-  { name: "John Doe", role: "Tournament Director", icon: "🎮" },
-  { name: "Jane Smith", role: "Event Coordinator", icon: "🏆" },
-  { name: "Alex Brown", role: "Technical Lead", icon: "💻" },
+  { name: "Binayak Dhungana", role: "Tournament Director", icon: "🎮" },
+  { name: "Manish Basnet", role: "Event Coordinator", icon: "🏆" },
+  { name: "Aashish Pokhrel", role: "Technical Lead", icon: "💻" },
 ];
 
 const sponsors = [
@@ -21,7 +21,7 @@ const OrganizerSection = () => {
 
       {/* Organizer Section */}
       <div className="relative z-10 text-center container mx-auto px-6 md:px-12">
-        <h2 className="text-5xl font-extrabold text-cyan-600 mb-12 animate-fade-in">
+        <h2 className="text-5xl font-extrabold text-cyan-600 mb-12 font-audio animate-fade-in">
           Meet the Organizers
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -35,10 +35,10 @@ const OrganizerSection = () => {
                 <div className="icon text-6xl mb-6 text-white animate-pulse">
                   {organizer.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-cyan-300 transition-colors">
+                <h3 className="text-2xl font-bold font-audio text-white mb-4 group-hover:text-cyan-300 transition-colors">
                   {organizer.name}
                 </h3>
-                <p className="text-gray-200 group-hover:text-gray-50 transition-colors text-sm">
+                <p className="text-gray-200 font-mono group-hover:text-gray-50 transition-colors text-sm">
                   {organizer.role}
                 </p>
               </div>
@@ -47,9 +47,11 @@ const OrganizerSection = () => {
         </div>
       </div>
 
+<br />
+
       {/* Sponsor Section */}
       <div className="relative z-10 container mx-auto px-6 md:px-12 text-center mt-20">
-        <h2 className="text-4xl font-extrabold text-cyan-600 mb-10 animate-fade-in">
+        <h2 className="text-4xl font-extrabold text-cyan-600 font-audio mb-10 animate-fade-in">
           Our Sponsors
         </h2>
         <div

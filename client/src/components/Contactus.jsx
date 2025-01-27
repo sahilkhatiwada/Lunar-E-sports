@@ -5,12 +5,12 @@ const ContactUs = () => {
     <section className="contact-us-section py-16 bg-gray-100 text-gray-800">
   <div className="container mx-auto px-6 md:px-12">
     <div className="text-center mb-12">
-      <h2 className="text-4xl font-bold text-cyan-500 mb-4">Contact Us</h2>
-      <p className="text-lg text-gray-600">
+      <h2 className="text-4xl font-bold text-cyan-500 mb-4 font-audio">Contact Us</h2>
+      <p className="text-lg text-gray-600 font-mono">
         Have questions or need assistance? Get in touch with us, and we’ll be happy to help.
       </p>
     </div>
-    <div className="flex flex-col lg:flex-row justify-center items-center gap-8">
+    <div className="flex flex-col lg:flex-row justify-center font-audio items-center gap-8">
       {/* Contact Form */}
       <div className="w-full lg:w-2/3 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 p-8 rounded-lg shadow-lg transform transition-transform hover:scale-105">
         <form className="space-y-6">
