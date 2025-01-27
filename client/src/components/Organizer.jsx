@@ -1,38 +1,44 @@
-const organizers = [
-  { name: "Binayak Dhungana", role: "Tournament Director", icon: "🎮" },
-  { name: "Manish Basnet", role: "Event Coordinator", icon: "🏆" },
-  { name: "Aashish Pokhrel", role: "Technical Lead", icon: "💻" },
-];
-
-const sponsors = [
-  { name: "Sponsor 1", logo: "/logos/sponsor1.png" },
-  { name: "Sponsor 2", logo: "/logos/sponsor2.png" },
-  { name: "Sponsor 3", logo: "/logos/sponsor3.png" },
-];
-
 const OrganizerSection = () => {
+  const organizers = [
+    { name: "Binayak Dhungana", role: "Tournament Director", icon: "🎮" },
+    { name: "Manish Basnet", role: "Event Coordinator", icon: "🏆" },
+    { name: "Aashish Pokhrel", role: "Technical Lead", icon: "💻" },
+  ];
+
+  const sponsors = [
+    { name: "Sponsor 1", logo: "/logos/sponsor1.png" },
+    { name: "Sponsor 2", logo: "/logos/sponsor2.png" },
+    { name: "Sponsor 3", logo: "/logos/sponsor3.png" },
+  ];
+
   return (
     <section
       id="organizer"
-      className="h-screen bg-gray-100 relative flex flex-col justify-center items-center overflow-hidden"
+      className="min-h-screen bg-gray-100 relative flex flex-col justify-center items-center overflow-hidden"
     >
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-200 via-gray-100 to-gray-50"></div>
+      <div
+        className="absolute inset-0 bg-gradient-to-br from-gray-200 via-gray-100 to-gray-50"
+        aria-hidden="true"
+      ></div>
 
       {/* Organizer Section */}
-      <div className="relative z-10 text-center container mx-auto px-6 md:px-12">
-        <h2 className="text-5xl font-extrabold text-cyan-600 mb-12 font-audio animate-fade-in">
+      <div className="relative z-10 text-center container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-cyan-600 mb-12 font-audio animate-fade-in">
           Meet the Organizers
         </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {organizers.map((organizer, index) => (
             <div
               key={index}
               className="group relative bg-gradient-to-br from-indigo-500 to-indigo-700 p-6 rounded-2xl shadow-lg hover:shadow-indigo-500/50 transition-transform transform hover:scale-105"
             >
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-indigo-300/20 rounded-lg blur-lg"></div>
+              <div
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-indigo-300/20 rounded-lg blur-lg"
+                aria-hidden="true"
+              ></div>
               <div className="relative z-20 text-center">
-                <div className="icon text-6xl mb-6 text-white animate-pulse">
+                <div className="icon text-6xl mb-6 text-white animate-pulse" aria-hidden="true">
                   {organizer.icon}
                 </div>
                 <h3 className="text-2xl font-bold font-audio text-white mb-4 group-hover:text-cyan-300 transition-colors">
@@ -47,29 +53,29 @@ const OrganizerSection = () => {
         </div>
       </div>
 
-<br />
+      <br />
 
       {/* Sponsor Section */}
-      <div className="relative z-10 container mx-auto px-6 md:px-12 text-center mt-20">
-        <h2 className="text-4xl font-extrabold text-cyan-600 font-audio mb-10 animate-fade-in">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center mt-20">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-cyan-600 font-audio mb-10 animate-fade-in">
           Our Sponsors
         </h2>
         <div
           className="overflow-hidden relative before:absolute before:inset-0 before:bg-gradient-to-r 
                 before:from-transparent before:via-cyan-100/50 before:to-transparent"
         >
-          <div className="flex animate-marquee gap-8">
+          <div className="flex animate-marquee gap-5 mb-10">
             {sponsors.map((sponsor, index) => (
               <div
                 key={index}
                 className="w-28 h-28 flex items-center justify-center bg-gradient-to-r 
                      from-cyan-500 to-blue-500 p-4 rounded-full shadow-lg 
-                     transition-all transform hover:scale-110 hover:shadow-cyan-500/50"
+                     transition-all transform hover:scale-100 hover:shadow-cyan-500/50"
               >
                 <img
                   src={sponsor.logo}
                   alt={sponsor.name}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full  object-contain"
                 />
               </div>
             ))}
